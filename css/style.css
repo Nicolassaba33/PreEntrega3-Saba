@@ -1,0 +1,434 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:ital,wght@0,500;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:ital,wght@0,500;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:ital,wght@0,500;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:ital,wght@0,500;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:ital,wght@0,500;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:ital,wght@0,500;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+main #designers {
+  font-family: "Inter", sans-serif;
+  margin: 10px;
+}
+main #designers .container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  align-content: center;
+  margin: 20px 0px;
+  border: 1px solid rgb(184, 178, 178);
+  border-radius: 30px;
+  padding: 5px;
+}
+main #designers .container img {
+  width: 100%;
+  border-radius: 30px;
+}
+
+@media (min-width: 720px) {
+  main {
+    width: 100%;
+  }
+  main #designers {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  main #designers .container {
+    width: 320px;
+    margin: 10px;
+  }
+  main #designers .container img {
+    width: 300px;
+  }
+}
+footer .container {
+  background-color: #e9e9e9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+}
+footer p {
+  text-decoration: underline;
+}
+footer .contact {
+  display: flex;
+  justify-content: center;
+}
+footer a {
+  margin: 10px;
+  padding: 0px;
+  font-size: 0px;
+}
+
+header {
+  background-color: #fff9ec;
+  font-family: "Inter", sans-serif;
+}
+header .container-mobile {
+  display: flex;
+}
+header .container-desktop {
+  display: none;
+}
+header .header-ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+}
+header li {
+  list-style: none;
+}
+header a {
+  color: black;
+}
+header i {
+  font-size: 18px;
+}
+header .imgHeader {
+  width: 80px;
+  border-radius: 15px;
+}
+
+@media (min-width: 720px) {
+  header .container-mobile {
+    display: none;
+  }
+  header .container-desktop {
+    display: flex;
+  }
+  header .container-desktop .header-ul {
+    justify-content: flex-start;
+  }
+  header .container-desktop .header-ul form {
+    width: 250px;
+    margin-left: 60px;
+  }
+  header .container-desktop .header-ul input[type=search] {
+    width: 250px;
+    height: 35px;
+    font-size: 16px;
+    padding: 0px 20px 0px 40px;
+    border-radius: 40px;
+    outline: none;
+    border: solid rgb(117, 117, 117) 2px;
+    background: url("../../img/Search.png") 7px center no-repeat;
+  }
+  header .container-desktop .header-menu {
+    display: flex;
+    width: 40%;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  header .container-desktop .header-menu li {
+    margin: 0px 20px;
+  }
+  header .container-desktop .header-menu a {
+    font-size: 20px;
+    text-decoration: none;
+  }
+  header .container-desktop .header-menu a i {
+    font-size: 20px;
+  }
+}
+#portadaSale {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 70vh;
+  background-image: url(../Images/Sale.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  margin-bottom: 30px;
+}
+#portadaSale .container {
+  text-align: center;
+  width: 87%;
+}
+#portadaSale h2 {
+  background-color: #890c0c;
+  color: rgb(243, 228, 228);
+  padding: 10px;
+}
+#portadaSale .carta {
+  margin: 40px 0px;
+}
+#portadaSale .carta img {
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  padding: 4px;
+}
+#portadaSale .carta p {
+  margin: 6px;
+}
+#portadaSale .carta del {
+  color: rgb(216, 21, 21);
+}
+#portadaSale .carta button {
+  background-color: #f5ece1;
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#saleCatalogo .productsDesktop {
+  display: none;
+}
+
+#portadaSale {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 70vh;
+  background-image: url(../../img/Sale.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  margin-bottom: 30px;
+}
+
+#offers .container {
+  text-align: center;
+  width: 87%;
+}
+#offers h2 {
+  background-color: #890c0c;
+  color: rgb(243, 228, 228);
+  padding: 10px;
+}
+#offers .carta {
+  margin: 40px 0px;
+}
+#offers .carta img {
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  padding: 4px;
+}
+#offers .carta p {
+  margin: 6px;
+}
+#offers .carta button {
+  background-color: #f5ece1;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: black;
+  font-size: 24px;
+  padding: 6px 30px;
+  border: none;
+  border-radius: 5px;
+}
+
+#account .container {
+  display: flex;
+  justify-content: center;
+}
+#account .container .perfil {
+  display: flex;
+  flex-direction: column;
+  margin: 100px 10px;
+  border: 1px solid black;
+  border-radius: 30px;
+  padding: 50px;
+  height: auto;
+  align-items: center;
+}
+#account .container .perfil img {
+  width: 100%;
+}
+#account .container .perfil .datos {
+  font-family: "Inter", sans-serif;
+}
+#account .container .perfil .buttons .btn {
+  height: 40px;
+  width: 100%;
+  color: white;
+  font-size: 15px;
+}
+
+#catalogo .productsDesktop {
+  display: none;
+}
+
+#stores .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+#stores img {
+  width: 100%;
+  margin-top: 20px;
+  padding: 15px;
+}
+#stores h2 {
+  text-align: center;
+  text-decoration: underline;
+}
+#stores p {
+  padding: 15px;
+}
+#stores iframe {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 15px;
+}
+
+@media (min-width: 720px) {
+  #stores .container {
+    display: flex;
+    flex-direction: column;
+  }
+  #stores .container .stores {
+    display: flex;
+    flex-direction: row;
+  }
+  #stores .container .stores .imgStore {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 60%;
+  }
+  #stores .container .stores .imgStore img {
+    width: 100%;
+    height: 500px;
+  }
+  #stores .container .stores .store {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  #stores .container .stores .store h2 {
+    margin-top: 50px;
+  }
+}
+#catalogo .products-Desktop {
+  display: none;
+}
+
+#portada {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 55vh;
+  background-image: linear-gradient(rgba(180, 123, 123, 0.486), rgba(0, 0, 0, 0.5)), url(../img/HarryStyles.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+#portada h1 {
+  font-family: "Dancing Script", cursive;
+  color: white;
+}
+
+hr {
+  border: none;
+  color: black;
+  height: 2px;
+  background-color: black;
+  width: 90%;
+}
+
+#destacada .container {
+  text-align: center;
+  width: 87%;
+}
+#destacada h2 {
+  background-color: #890c0c;
+  color: rgb(243, 228, 228);
+  padding: 10px;
+}
+#destacada .carta {
+  margin: 40px 0px;
+}
+#destacada .carta img {
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  padding: 4px;
+}
+#destacada .carta p {
+  margin: 6px;
+}
+#destacada .carta button {
+  background-color: #f5ece1;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: black;
+  font-size: 24px;
+  padding: 6px 30px;
+  border: none;
+  border-radius: 5px;
+}
+
+@media (min-width: 720px) {
+  #portada h1 {
+    font-size: 45px;
+  }
+  #destacada .container {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+  }
+  #destacada .container .products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+  #destacada .container .carta {
+    margin: auto;
+    margin: 10px;
+  }
+  #destacada .container .carta img {
+    width: 200px;
+    height: auto;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0px;
+  background-color: rgb(245, 245, 245);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 100%;
+  margin: auto;
+}
+
+/*# sourceMappingURL=style.css.map */

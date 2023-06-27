@@ -1,0 +1,36 @@
+@import "../base/colores";
+
+#account {
+  .container {
+    display: flex;
+    justify-content: center;
+
+    .perfil {
+      display: flex;
+      flex-direction: column;
+      margin: 100px 10px;
+      border: 1px solid black;
+      border-radius: 30px;
+      padding: 50px;
+      height: auto;
+      align-items: center;
+
+      img {
+        width: 100%;
+      }
+
+      .datos {
+        font-family: "Inter", sans-serif;
+      }
+
+      .buttons {
+        .btn {
+          height: 40px;
+          width: 100%;
+          color: white;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}

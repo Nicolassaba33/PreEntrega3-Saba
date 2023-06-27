@@ -1,0 +1,27 @@
+@import "../scss/base/colores";
+@import "../scss/components/diseñadores";
+@import "../scss/components/footer";
+@import "../scss/components/header";
+@import "../scss/components/ofertas";
+@import "../scss/components/account";
+@import "../scss/components/stores";
+@import "../scss/components/menu";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0px;
+  background-color: rgb(245, 245, 245);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 100%;
+  margin: auto;
+}
