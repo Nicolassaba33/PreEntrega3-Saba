@@ -1,81 +1,82 @@
 @import "../base/colores";
 
-#catalogo {
-  .products-Desktop {
-    display: none;
+main {
+  #catalogo {
+    .products-Desktop {
+      display: none;
+    }
   }
-}
 
-#portada {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  flex-direction: column;
-  height: 55vh;
-  background-image: linear-gradient(
-      rgba(180, 123, 123, 0.486),
-      rgba(0, 0, 0, 0.5)
-    ),
-    url(../img/HarryStyles.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-
-  h1 {
-    font-family: "Dancing Script", cursive;
-    color: white;
-  }
-}
-
-hr {
-  border: none;
-  color: black;
-  height: 2px;
-  background-color: black;
-  width: 90%;
-}
-
-#destacada {
-  .container {
+  #portada {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    width: 87%;
+    flex-direction: column;
+    height: 55vh;
+    background-image: linear-gradient(
+        rgba(180, 123, 123, 0.486),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url(../img/HarryStyles.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    h1 {
+      font-family: "Dancing Script", cursive;
+      color: white;
+    }
   }
 
-  h2 {
-    background-color: #890c0c;
-    color: rgb(243, 228, 228);
-    padding: 10px;
+  hr {
+    border: none;
+    color: black;
+    height: 2px;
+    background-color: black;
+    width: 90%;
   }
 
-  .carta {
-    margin: 40px 0px;
-
-    img {
-      border-radius: 15px;
-      justify-content: center;
-      align-items: center;
-      width: 60%;
-      padding: 4px;
+  #destacada {
+    .container {
+      text-align: center;
+      width: 87%;
     }
 
-    p {
-      margin: 6px;
+    h2 {
+      background-color: #890c0c;
+      color: rgb(243, 228, 228);
+      padding: 10px;
     }
 
-    button {
-      background-color: #f5ece1;
-      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
-        0 6px 20px 0 rgba(0, 0, 0, 0.19);
-      color: black;
-      font-size: 24px;
-      padding: 6px 30px;
-      border: none;
-      border-radius: 5px;
+    .carta {
+      margin: 40px 0px;
+
+      img {
+        border-radius: 15px;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+        padding: 4px;
+      }
+
+      p {
+        margin: 6px;
+      }
+
+      button {
+        background-color: #f5ece1;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        color: black;
+        font-size: 24px;
+        padding: 6px 30px;
+        border: none;
+        border-radius: 5px;
+      }
     }
   }
 }
-
 @media (min-width: 720px) {
   #portada {
     h1 {
