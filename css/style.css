@@ -154,11 +154,11 @@ header .imgHeader {
   justify-content: center;
   text-align: center;
   flex-direction: column;
-  height: 70vh;
-  background-image: url(../Images/Sale.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  height: 14vh;
+  background-image: url(../../img/PortadaSale.jpg);
   margin-bottom: 30px;
 }
 #portadaSale .container {
@@ -183,32 +183,18 @@ header .imgHeader {
 #portadaSale .carta p {
   margin: 6px;
 }
-#portadaSale .carta del {
-  color: rgb(216, 21, 21);
-}
-#portadaSale .carta button {
+#portadaSale .carta button, #portadaSale main #destacada .carta .button-danger, main #destacada #portadaSale .carta .button-danger, #portadaSale .carta .button-danger {
   background-color: #f5ece1;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   color: black;
-  font-size: 15px;
-  font-weight: bold;
+  font-size: 24px;
+  padding: 6px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
-
-#saleCatalogo .productsDesktop {
-  display: none;
-}
-
-#portadaSale {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  flex-direction: column;
-  height: 24vh;
-  background-image: url(../../img/PortadaSale.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  margin-bottom: 30px;
+#portadaSale .carta .button-danger {
+  background-color: red;
 }
 
 #offers .container {
@@ -233,7 +219,7 @@ header .imgHeader {
 #offers .carta p {
   margin: 6px;
 }
-#offers .carta button {
+#offers .carta button, #offers main #destacada .carta .button-danger, main #destacada #offers .carta .button-danger, #offers .carta .button-danger {
   background-color: #f5ece1;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   color: black;
@@ -241,11 +227,15 @@ header .imgHeader {
   padding: 6px 30px;
   border: none;
   border-radius: 5px;
+  cursor: pointer;
+}
+#offers .carta .button-danger {
+  background-color: red;
 }
 
 @media (min-width: 720px) {
   #portadaSale {
-    height: 60vh;
+    height: 40vh;
   }
   #portadaSale h1 {
     font-size: 45px;
@@ -363,11 +353,11 @@ main #portada {
   justify-content: center;
   text-align: center;
   flex-direction: column;
-  height: 55vh;
-  background-image: linear-gradient(rgba(180, 123, 123, 0.486), rgba(0, 0, 0, 0.5)), url(../img/HarryStyles.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  height: 55vh;
+  background-image: linear-gradient(rgba(180, 123, 123, 0.486), rgba(0, 0, 0, 0.5)), url(../img/HarryStyles.jpg);
 }
 main #portada h1 {
   font-family: "Dancing Script", cursive;
@@ -402,7 +392,7 @@ main #destacada .carta img {
 main #destacada .carta p {
   margin: 6px;
 }
-main #destacada .carta button {
+main #destacada .carta button, main #destacada .carta .button-danger {
   background-color: #f5ece1;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   color: black;
@@ -410,6 +400,10 @@ main #destacada .carta button {
   padding: 6px 30px;
   border: none;
   border-radius: 5px;
+  cursor: pointer;
+}
+main #destacada .carta .button-danger {
+  background-color: red;
 }
 
 @media (min-width: 720px) {

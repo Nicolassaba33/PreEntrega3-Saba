@@ -5,3 +5,43 @@ $color-fondo: #fff9ec;
 $color-cartel: #890c0c;
 $color-fuente: #232323;
 $color-boton: #f5ece1;
+
+@mixin botonesCompra() {
+  button {
+    background-color: #f5ece1;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: black;
+    font-size: 24px;
+    padding: 6px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .button-danger {
+    @extend button;
+    background-color: red;
+  }
+}
+
+@mixin imgProduct() {
+  img {
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    padding: 4px;
+  }
+}
+
+@mixin imgPortadas() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}

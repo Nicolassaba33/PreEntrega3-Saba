@@ -1,16 +1,9 @@
 @import "../base/colores";
 
 #portadaSale {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  flex-direction: column;
-  height: 70vh;
-  background-image: url(../Images/Sale.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+  @include imgPortadas;
+  height: 14vh;
+  background-image: url(../../img/PortadaSale.jpg);
   margin-bottom: 30px;
 
   .container {
@@ -27,49 +20,14 @@
   .carta {
     margin: 40px 0px;
 
-    img {
-      border-radius: 15px;
-      justify-content: center;
-      align-items: center;
-      width: 60%;
-      padding: 4px;
-    }
+    @include imgProduct;
 
     p {
       margin: 6px;
     }
 
-    del {
-      color: rgb(216, 21, 21);
-    }
-
-    button {
-      background-color: #f5ece1;
-      color: black;
-      font-size: 15px;
-      font-weight: bold;
-    }
+    @include botonesCompra;
   }
-}
-
-#saleCatalogo {
-  .productsDesktop {
-    display: none;
-  }
-}
-
-#portadaSale {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  flex-direction: column;
-  height: 24vh;
-  background-image: url(../../img/PortadaSale.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  margin-bottom: 30px;
 }
 
 #offers {
@@ -99,22 +57,13 @@
       margin: 6px;
     }
 
-    button {
-      background-color: #f5ece1;
-      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
-        0 6px 20px 0 rgba(0, 0, 0, 0.19);
-      color: black;
-      font-size: 24px;
-      padding: 6px 30px;
-      border: none;
-      border-radius: 5px;
-    }
+    @include botonesCompra();
   }
 }
 
 @media (min-width: 720px) {
   #portadaSale {
-    height: 60vh;
+    height: 40vh;
     h1 {
       font-size: 45px;
     }

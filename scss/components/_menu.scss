@@ -8,20 +8,13 @@ main {
   }
 
   #portada {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
+    @include imgPortadas;
     height: 55vh;
     background-image: linear-gradient(
         rgba(180, 123, 123, 0.486),
         rgba(0, 0, 0, 0.5)
       ),
       url(../img/HarryStyles.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
 
     h1 {
       font-family: "Dancing Script", cursive;
@@ -52,28 +45,13 @@ main {
     .carta {
       margin: 40px 0px;
 
-      img {
-        border-radius: 15px;
-        justify-content: center;
-        align-items: center;
-        width: 60%;
-        padding: 4px;
-      }
+      @include imgProduct;
 
       p {
         margin: 6px;
       }
 
-      button {
-        background-color: #f5ece1;
-        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
-          0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        color: black;
-        font-size: 24px;
-        padding: 6px 30px;
-        border: none;
-        border-radius: 5px;
-      }
+      @include botonesCompra;
     }
   }
 }
